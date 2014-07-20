@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.bishal.app.model.Connection" table="user_connections"
+		catalog="matrimonial">
+
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+		<property name="userId" type="java.lang.Integer">
+			<column name="USERID" not-null="false" />
+		</property>
+
+		<property name="id2" type="java.lang.Integer">
+			<column name="ID2" not-null="false" />
+		</property>
+		<property name="isFriend" type="java.lang.Integer">
+			<column name="ISFRIEND" length="1" not-null="false" />
+		</property>
+	</class>
+</hibernate-mapping>

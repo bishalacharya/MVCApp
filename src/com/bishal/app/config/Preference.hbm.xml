@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    	<class name="com.bishal.app.model.PartnerPreference" table="partner_preference"
+		catalog="matrimonial">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+		<property name="age1" type="java.lang.Integer">
+			<column name="AGE1" length="3" not-null="false" />
+		</property>
+		<property name="age2" type="java.lang.Integer">
+			<column name="AGE2" length="3" not-null="false" />
+		</property>
+		<property name="sex" type="string">
+			<column name="SEX" length="1" not-null="true" />
+		</property>
+		<property name="country" type="string">
+			<column name="COUNTRY" length="30" not-null="false" />
+		</property>
+		<property name="religion" type="string">
+			<column name="RELIGION" length="30" not-null="false" />
+		</property>
+		<property name="language" type="string">
+			<column name="LANGUAGE" length="30" not-null="false" />
+		</property>
+		<property name="complexion" type="string">
+			<column name="COMPLEXION" length="30" not-null="false" />
+		</property>
+		<property name="occupation" type="string">
+		<column name="OCCUPATION" length="30" not-null="false" />
+		</property>
+		<property name="diet" type="string">
+		<column name="DIET" length="30" not-null="false" />
+		</property>
+	</class>
+</hibernate-mapping>
